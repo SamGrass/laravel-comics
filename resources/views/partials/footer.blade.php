@@ -85,7 +85,7 @@ $socials = config('socials');
     <div class="socials">
         <div class="container">
             <!-- sign up sx-->
-            <a href="#!" class="btn-sign-up">
+            <a href="#!" class="btn">
                 SIGN-UP NOW!
             </a>
 
