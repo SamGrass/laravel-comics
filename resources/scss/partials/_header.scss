@@ -47,9 +47,9 @@ header {
         }
     }
 
-    .jumbotron {
-        height: 400px;
-        background-image: url(../assets/jumbotron.jpg);
 
-    }
 }
+.jumbotron {
+        height: 400px;
+        background-image: url('/public/img/jumbotron.jpg');
+    }

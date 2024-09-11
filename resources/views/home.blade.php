@@ -2,13 +2,13 @@
 @extends('layouts.main')
 
 @section('hero')
-    <div>HERO HOME</div>
+<div>HERO HOME</div>
 @endsection
 
 @section('content')
 <div class="container my-5">
     <h1>{{ $title }}</h1>
-    <img src="{{ Vite::asset('resources/img/colibri.jpg') }}" alt="" class="img-fluid">
+    <img src="" alt="" class="img-fluid">
     <p>
         {{ $text }}
     </p>
@@ -18,5 +18,5 @@
 
 
 @section('titlePage')
-    home
+home
 @endsection

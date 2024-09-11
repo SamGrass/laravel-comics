@@ -4,7 +4,7 @@
 
             <!-- img sx -->
             <div class="image-container">
-                <img src="../assets/dc-logo.png" alt="...">
+                <img src="{{ Vite::asset('/public/img/dc-logo.png') }}" alt="...">
             </div>
             <!-- nav dx -->
             <nav>
