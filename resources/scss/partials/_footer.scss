@@ -1,0 +1,96 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+footer {
+    color: #fff;
+
+    .shop {
+        padding: 1rem 0;
+        background-color: $primary;
+
+        .shop-container {
+            padding: 0 3rem;
+
+            ul {
+                @include flex-center();
+                justify-content: space-between;
+
+                li a {
+                    @include flex-center();
+
+
+                    .image-container {
+                        width: 80px;
+                        height: 80px;
+
+                        img {
+                            display: block;
+                            max-height: 100%;
+                        }
+                    }
+
+                    .shop-text {
+                        font-size: 0.8rem;
+                        color: #fff;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .useful-links {
+        padding: 2rem 0;
+        background-image: url(../assets/dc-logo-bg.png), url(../assets/footer-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: auto, cover;
+        background-position: bottom 40% right 10%, 0;
+
+        .flex-column {
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 400px;
+
+            h3 {
+                margin: 0.5rem 0;
+            }
+
+            a {
+                color: #ffffff7e;
+                font-size: 0.8rem;
+                margin-top: 0.2rem;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .socials {
+        padding: 1rem 0;
+        background-color: #303030;
+
+        .container {
+            @include flex-center('vertical');
+            justify-content: space-between;
+
+            a {
+                display: block
+            }
+            .social-icons {
+                @include flex-center();
+                gap: 1rem;
+                color: $primary;
+
+                ul {
+                    @include flex-center();
+                    gap: 0.5rem;
+                }
+            }
+        }
+    }
+}
