@@ -1,3 +1,7 @@
+@php
+$nav_links = config('links.0.links');
+@endphp
+
 <div>
     <header>
         <div class="container">
@@ -9,23 +13,12 @@
             <!-- nav dx -->
             <nav>
                 <ul>
+                    @foreach ($nav_links as $nav_link)
                     <li>
-                        <a class="" :href="#">Home</a>
-                    </li>
-                    <li>
-                        <a class="" :href="#">Home</a>
-                    </li>
-                    <li>
-                        <a class="" :href="#">Home</a>
-                    </li>
-                    <li>
-                        <a class="" :href="#">Home</a>
-                    </li>
-                    <li>
-                        <a class="" :href="#">Home</a>
+                        <a class="" href="#!">{{ $nav_link}}</a>
                     </li>
 
-
+                    @endforeach
                 </ul>
             </nav>
         </div>

@@ -1,3 +1,6 @@
+
+
+
 @use './variables' as *;
 @use './mixins' as *;
 
@@ -42,7 +45,7 @@ footer {
 
     .useful-links {
         padding: 2rem 0;
-        background-image: url(../assets/dc-logo-bg.png), url(../assets/footer-bg.jpg);
+        background-image: url('/public/img/dc-logo-bg.png'), url('/public/img/footer-bg.jpg');
         background-repeat: no-repeat;
         background-size: auto, cover;
         background-position: bottom 40% right 10%, 0;

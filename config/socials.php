@@ -1,9 +1,9 @@
 <?php
 
 return [
-    ["social" => "footer-facebook.png"],
-    ["social" => "footer-periscope.png"],
-    ["social" => "footer-pinterest.png"],
-    ["social" => "footer-twitter.png"],
-    ["social" => "footer-youtube.png"]
+    "/public/img/footer-facebook.png",
+    "/public/img/footer-periscope.png",
+    "/public/img/footer-pinterest.png",
+    "/public/img/footer-twitter.png",
+    "/public/img/footer-youtube.png"
 ];
