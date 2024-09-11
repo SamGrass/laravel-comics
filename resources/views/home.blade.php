@@ -1,18 +1,27 @@
 {{-- questa view estende il file main.blade.php che è dentro la cartella view/layouts --}}
 @extends('layouts.main')
 
-@section('hero')
-<div>HERO HOME</div>
-@endsection
-
 @section('content')
-<div class="container my-5">
-    <h1>{{ $title }}</h1>
-    <img src="" alt="" class="img-fluid">
-    <p>
-        {{ $text }}
-    </p>
-</div>
+<main>
+    <div class="container">
+        <div class="current-series btn">CURRENT SERIES</div>
+        <!-- parte cards -->
+        <div class="cards">
+            @foreach ($comics as $comic)
+
+            <div class="card">
+                <div class="image-container">
+                    <img src="{{ $comic['thumb']}}" alt="series">
+                </div>
+                <h5>{{ $comic['title'] }}</h5>
+            </div>
+            @endforeach
+        </div>
+
+        <!-- carica altro -->
+        <a class="btn" href="#!">LOAD MORE</a>
+    </div>
+</main>
 
 @endsection
 
